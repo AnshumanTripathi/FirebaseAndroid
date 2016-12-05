@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="facebook_app_id">***Facebook app id*****</string>
+    <string name="homeText">Login Here</string>
+    <string name="title_activity_google_sign_in_activty">GoogleSignInActivty</string>
+    <string name="signIn">Sign In</string>
+    <string name="signOut">Sign Out</string>
+    <string name="emailSignIn">Sign In with Email</string>
+    <string name="signUp">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="emailHint">jon.doe@email.com</string>
+    <string name="password">Password</string>
+    <string name="passwordHint">********</string>
+    <string name="submit">Submit</string>
+</resources>
