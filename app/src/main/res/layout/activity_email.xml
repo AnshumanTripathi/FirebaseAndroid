@@ -4,7 +4,7 @@
     android:id="@+id/activity_email"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.loginapp.EmailActivity"
+    tools:context="com.loginapp.SignInActivity"
     android:orientation="vertical">
 
     <TextView

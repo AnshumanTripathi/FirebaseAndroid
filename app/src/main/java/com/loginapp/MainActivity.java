@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         findViewById(R.id.emailLogin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, EmailActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });
@@ -131,6 +131,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.forgotPassword).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ForgotPasswordActivity.class);
                 startActivity(intent);
             }
         });
@@ -196,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signInWithCredential:onComplete:" + task.isSuccessful());
                         //Go to new Activity
-                        Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                         intent.putExtra("Email", user.getEmail());
                         startActivity(intent);
 
@@ -260,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private void updateUI() {
         //Go to next Activity after successful login
         Log.d("Email here",""+userEmail);
-        Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
         intent.putExtra("Email", userEmail);
         startActivity(intent);
     }

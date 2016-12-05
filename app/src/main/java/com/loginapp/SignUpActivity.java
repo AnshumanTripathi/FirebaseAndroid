@@ -46,7 +46,7 @@ public class SignUpActivity extends AppCompatActivity {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     Toast.makeText(SignUpActivity.this,"Sign Up Successful",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SignUpActivity.this, EmailActivity.class);
+                    Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
                     startActivity(intent);
                 } else {
                     // User is signed out
